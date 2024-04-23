@@ -1,10 +1,18 @@
+-- NOTE:
+-- this one split a window
+-- and route messages to this window
+
 local ns = vim.api.nvim_create_namespace("fancy-ext-messages")
 
--- testing
+-- first do:
 -- vnew
 -- lua vim.fn.bufnr()
+-- run above lua code in the split window
+-- and get the bufnr(fancy way of saying buffer number)
 local buf = 52
 -- lua vim.api.nvim_get_current_win()
+-- run above lua code in the split window
+-- and get the winid
 local win = 1126
 
 -- set scratch buffer
